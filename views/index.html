@@ -19,7 +19,7 @@
 
 <div ng-app="myApp">
     <div ng-controller="FirstController">
-
+        
         <open-c chat="chat"></open-c>
         <h3>Nickname</h3>
         <input type="text" ng-model="data.nickname">
@@ -28,10 +28,11 @@
         <input type="text" ng-model="data.message">
         <button type="button" ng-click="emitText()" class="btn btn-ttc">Send</button>
         <br>
-        Mi chat:
-        <p ng-repeat="linea in chat">
-         {{linea}}
-        </p>
+        <div class="well">
+            <p ng-repeat="linea in chat">
+            {{linea}}
+            </p>
+        </div>
     </div>
 </div>
 

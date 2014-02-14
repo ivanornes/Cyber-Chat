@@ -10,7 +10,7 @@ function FirstController($scope){
     };
     $scope.openConnect = function () {
 
-        var socket = io.connect('http://inventoryx.herokuapp.com:3000');
+        var socket = io.connect('http://localhost:3000');
 
         socket.on('received', function (data) {
             $scope.chat.push(data);
@@ -18,11 +18,7 @@ function FirstController($scope){
         });
     };
     $scope.chat = [];
-
-
-
 }
-
 myApp.directive('openC', function() {
     return {
         restrict: 'E',
