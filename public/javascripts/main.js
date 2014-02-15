@@ -34,4 +34,5 @@ myApp.directive('openC', function() {
             scope.openConnect();
         }
     };
+    
 });
